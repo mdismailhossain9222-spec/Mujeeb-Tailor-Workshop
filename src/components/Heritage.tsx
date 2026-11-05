@@ -72,7 +72,7 @@ export default function Heritage() {
                 aria-hidden="true"
                 className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border-2 border-brand"
               />
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(194,65,12,0.45)]">
+              <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(194,65,12,0.45)] pb-4 sm:pb-0">
                 <Image
                   src={FABRIC_IMAGE}
                   alt="Rolls of imported fabric in the Mujeeb Tailoring Workshop store"
@@ -85,7 +85,7 @@ export default function Heritage() {
                   Imported Fabric Stock
                 </span>
               </div>
-              <figcaption className="mt-3 text-[11px] font-medium italic text-muted">
+              <figcaption className="mt-5 text-[11px] font-medium italic text-muted">
                 Our imported fabric store — Mujeeb Tailoring Workshop, Ajman.
               </figcaption>
             </figure>
@@ -131,7 +131,7 @@ export default function Heritage() {
                     <span className="relative z-10 grid size-10 shrink-0 place-items-center rounded-full border-2 border-brand bg-white text-brand shadow-[0_0_0_6px_#ffffff] sm:size-12">
                       <Icon className="size-5 sm:size-6" strokeWidth={2} />
                     </span>
-                    <div className="flex-1 rounded-2xl border border-orange-100 bg-white p-5 shadow-[0_10px_30px_-18px_rgba(31,41,55,0.35)] transition-colors duration-300 hover:border-brand/50 sm:p-6">
+                    <div className="flex-1 rounded-2xl border border-orange-100 bg-white p-5 sm:p-6 shadow-[0_10px_30px_-18px_rgba(31,41,55,0.35)] transition-colors duration-300 hover:border-brand/50">
                       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                         <span className="font-serif text-2xl font-black leading-none text-brand sm:text-3xl">
                           {milestone.year}
