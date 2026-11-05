@@ -1,5 +1,5 @@
 import { MapPin, Mail, Scissors } from "lucide-react";
-import Logo from "./Logo";
+import Image from "next/image";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 const QUICK_LINKS = [
@@ -33,7 +33,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-4">
             <a href="#home" aria-label="Mujeeb Tailoring Workshop — back to top">
-              <Logo />
+              <Image
+                src="/images/mujeeb-logo-transparent.png"
+                alt="Mujeeb Tailoring Workshop"
+                width={180}
+                height={50}
+                className="object-contain w-[150px] h-[42px] sm:w-[180px] sm:h-[50px] mb-4"
+              />
             </a>
             <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-muted">
               Bespoke uniform and corporate garment manufacturer, crafting for the
