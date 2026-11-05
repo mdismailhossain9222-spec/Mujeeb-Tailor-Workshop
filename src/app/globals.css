@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff7ed;
+  --color-brand: #ea580c;
+  --color-brand-dark: #c2410c;
+  --color-brand-light: #ffedd5;
+  --color-ink: #1f2937;
+  --color-muted: #4b5563;
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+  overflow-x: hidden;
+  /* Remove the default blue tap highlight on touch devices. */
+  -webkit-tap-highlight-color: transparent;
+  /* Prevent accidental zoom / pull-to-refresh interference with Lenis. */
+  touch-action: pan-y;
+}
+
+::selection {
+  background-color: #ea580c;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff7ed;
+}
+::-webkit-scrollbar-thumb {
+  background: #ea580c;
+  border-radius: 8px;
+  border: 2px solid #fff7ed;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2410c;
+}
+
+/* Subtle tailoring-inspired dot grid */
+.texture-dots {
+  background-image: radial-gradient(circle, rgba(234, 88, 12, 0.22) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+.texture-dots-light {
+  background-image: radial-gradient(circle, rgba(234, 88, 12, 0.14) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* Tailor's dashed stitch line */
+.stitch-line {
+  background-image: linear-gradient(to right, #ea580c 55%, transparent 45%);
+  background-size: 14px 2px;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+.animate-float-soft {
+  animation: float-soft 5.5s ease-in-out infinite;
+}
+
+@keyframes scroll-dot {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+.animate-scroll-dot {
+  animation: scroll-dot 1.9s ease-out infinite;
+}
+
+:focus-visible {
+  outline: 2px solid #ea580c;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
