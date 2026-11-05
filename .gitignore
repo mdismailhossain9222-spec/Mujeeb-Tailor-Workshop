@@ -38,3 +38,6 @@ test-results/
 
 # Claude Code local state
 .claude/
+
+# Project archives
+*.zip
