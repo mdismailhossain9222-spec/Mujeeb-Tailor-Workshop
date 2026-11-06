@@ -16,14 +16,14 @@ import {
 } from "lucide-react";
 
 const CLIENTS = [
-  { name: "Al Noor Hospitals", icon: Stethoscope, style: "font-sans font-extrabold tracking-tight" },
-  { name: "Gulf Star Motors", icon: Car, style: "font-sans font-black italic" },
-  { name: "Emirates Contracting Co.", icon: HardHat, style: "font-sans font-bold uppercase tracking-[0.12em] text-[12px]" },
-  { name: "Pearl Gulf Hospitality", icon: UtensilsCrossed, style: "font-serif font-bold italic" },
-  { name: "Sahara Retail Group", icon: ShoppingBag, style: "font-sans font-extrabold uppercase tracking-[0.2em] text-[12px]" },
-  { name: "Falcon Freight & Logistics", icon: Truck, style: "font-sans font-black tracking-tight" },
-  { name: "National Mills Industries", icon: Factory, style: "font-serif font-black" },
-  { name: "Horizon Schools", icon: GraduationCap, style: "font-sans font-extrabold" },
+  { name: "Al Noor Hospitals", icon: Stethoscope },
+  { name: "Gulf Star Motors", icon: Car },
+  { name: "Emirates Contracting Co.", icon: HardHat },
+  { name: "Pearl Gulf Hospitality", icon: UtensilsCrossed },
+  { name: "Sahara Retail Group", icon: ShoppingBag },
+  { name: "Falcon Freight & Logistics", icon: Truck },
+  { name: "National Mills Industries", icon: Factory },
+  { name: "Horizon Schools", icon: GraduationCap },
 ];
 
 const TIMELINE = [
@@ -48,7 +48,7 @@ const SECTORS = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="scroll-mt-28 bg-cream py-20 sm:py-24 lg:py-28">
+    <section id="clients" className="scroll-mt-28 bg-[#FFF7ED] py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
@@ -68,23 +68,23 @@ export default function Clients() {
         </div>
 
         {/* Client wordmark grid */}
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
           {CLIENTS.map((client) => {
             const Icon = client.icon;
             return (
               <motion.div
                 key={client.name}
-                whileHover={{ y: -4 }}
+                whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="flex h-28 flex-col items-center justify-center gap-2 rounded-2xl border border-orange-100 bg-white px-3 text-center"
+                className="group flex h-28 flex-col items-center justify-center gap-2 rounded-2xl border border-[#EA580C]/10 bg-gradient-to-b from-white to-[#FFF7ED] px-3 text-center shadow-sm transition-shadow duration-300 hover:shadow-[0_10px_30px_rgba(234,88,12,0.1)] hover:border-[#EA580C]/30"
                 style={{ willChange: "transform, box-shadow, border-color" }}
               >
                 <Icon
-                  className="size-6 text-muted/60 transition-all duration-300 group-hover:scale-110 group-hover:text-brand"
+                  className="size-8 text-[#EA580C]/70 transition-all duration-300 group-hover:scale-110 group-hover:text-[#EA580C]"
                   strokeWidth={1.8}
                 />
                 <span
-                  className={`${client.style} text-sm leading-tight text-muted/75 transition-colors duration-300 group-hover:text-ink sm:text-[15px]`}
+                  className="text-ink text-sm font-semibold leading-tight tracking-wide uppercase transition-colors duration-300 sm:text-[15px]"
                 >
                   {client.name}
                 </span>
