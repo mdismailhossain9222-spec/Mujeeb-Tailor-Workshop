@@ -6,9 +6,9 @@ export default function Logo({ light = false }: { light?: boolean }) {
       <Image
         src="/images/mujeeb-logo-transparent.png"
         alt="Mujeeb Tailoring Workshop"
-        width={180}
-        height={50}
-        className="object-contain w-[150px] h-[42px] sm:w-[180px] sm:h-[50px]"
+        width={230}
+        height={64}
+        className="object-contain w-auto h-14 md:h-16"
         priority
       />
     </span>

@@ -36,9 +36,9 @@ export default function Footer() {
               <Image
                 src="/images/mujeeb-logo-transparent.png"
                 alt="Mujeeb Tailoring Workshop"
-                width={180}
-                height={50}
-                className="object-contain w-[150px] h-[42px] sm:w-[180px] sm:h-[50px] mb-4"
+                width={230}
+                height={64}
+                className="object-contain w-auto h-16 md:h-20 mb-4"
               />
             </a>
             <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-muted">
