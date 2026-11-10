@@ -11,19 +11,20 @@ import {
   ShoppingBag,
   Stethoscope,
   Truck,
-  UtensilsCrossed,
   Briefcase,
+  Fuel,
+  UtensilsCrossed,
 } from "lucide-react";
 
 const CLIENTS = [
-  { name: "Al Noor Hospitals", icon: Stethoscope },
-  { name: "Gulf Star Motors", icon: Car },
-  { name: "Emirates Contracting Co.", icon: HardHat },
-  { name: "Pearl Gulf Hospitality", icon: UtensilsCrossed },
-  { name: "Sahara Retail Group", icon: ShoppingBag },
-  { name: "Falcon Freight & Logistics", icon: Truck },
-  { name: "National Mills Industries", icon: Factory },
-  { name: "Horizon Schools", icon: GraduationCap },
+  { name: "Leading Hospitals", icon: Stethoscope },
+  { name: "Automotive Industries", icon: Car },
+  { name: "Construction Companies", icon: HardHat },
+  { name: "Retail Groups & Malls", icon: ShoppingBag },
+  { name: "Educational Institutions", icon: GraduationCap },
+  { name: "Petroleum & Energy", icon: Fuel },
+  { name: "Logistics & Supply Chain", icon: Truck },
+  { name: "Corporate Offices", icon: Briefcase },
 ];
 
 const TIMELINE = [
@@ -93,7 +94,7 @@ export default function Clients() {
           })}
         </div>
         <p className="mt-4 text-center text-[10.5px] font-medium text-muted/70">
-          Illustrative client marks shown — full client references are shared on request.
+          Illustrative industry sectors shown — full client references are shared on request.
         </p>
 
         {/* Sector chips */}
