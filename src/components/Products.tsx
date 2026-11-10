@@ -126,7 +126,7 @@ const PRODUCTS: Product[] = [
     id: "labcoats",
     name: "Lab Coats",
     category: "Healthcare",
-    image: "/images/products/labcoats.jpg",
+    image: "/images/products/labcoats.webp",
     blurb:
       "Buttoned white medical coats with lapels and deep pocketing for clinics, labs and hospital wards.",
     options: [
