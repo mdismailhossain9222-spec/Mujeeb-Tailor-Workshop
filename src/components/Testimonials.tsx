@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const TESTIMONIALS = [
   {
@@ -139,37 +139,19 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export default function Testimonials() {
-  const [isPaused, setIsPaused] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // Calculate animation duration based on content width
+  // Calculate animation duration based on content width - faster speed
   useEffect(() => {
-    if (!trackRef.current || !containerRef.current) return;
+    if (!trackRef.current) return;
 
     const track = trackRef.current;
-    const container = containerRef.current;
-
     const contentWidth = track.scrollWidth / 2; // Since we duplicate content
-    const speed = 35; // pixels per second
+    const speed = 60; // pixels per second (faster)
     const duration = contentWidth / speed;
 
     track.style.setProperty("--marquee-duration", `${duration}s`);
   }, []);
-
-  const handleMouseEnter = () => {
-    setIsPaused(true);
-    if (trackRef.current) {
-      trackRef.current.style.animationPlayState = "paused";
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setIsPaused(false);
-    if (trackRef.current) {
-      trackRef.current.style.animationPlayState = "running";
-    }
-  };
 
   return (
     <section
@@ -200,18 +182,13 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Infinite Marquee Slider */}
-        <div
-          ref={containerRef}
-          className="overflow-hidden"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
+        {/* Infinite Marquee Slider - No hover pause, continuous motion */}
+        <div className="overflow-hidden">
           <div
             ref={trackRef}
             className="flex gap-6 w-max"
             style={{
-              animation: "marquee var(--marquee-duration, 30s) linear infinite",
+              animation: "marquee var(--marquee-duration, 18s) linear infinite",
             }}
           >
             {/* First pass */}
@@ -236,11 +213,6 @@ export default function Testimonials() {
             }
           `}</style>
         </div>
-
-        {/* Pause indicator */}
-        <p className="mt-8 text-center text-[11px] font-medium text-muted/60">
-          {isPaused ? "Hover to read • Auto-scroll paused" : "Hover any card to pause scrolling"}
-        </p>
       </div>
     </section>
   );
