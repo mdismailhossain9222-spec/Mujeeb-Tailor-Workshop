@@ -33,9 +33,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-4">
             <a href="#home" aria-label="Mujeeb Tailoring Workshop — back to top">
-              <Image
+                            <Image
                 src="/images/mujeeb-logo-transparent.png"
-                alt="Mujeeb Tailoring Workshop"
+                alt="Mujeeb Tailoring Workshop logo — premium uniform manufacturer in Ajman"
                 width={230}
                 height={64}
                 className="object-contain w-auto h-16 md:h-20 mb-4"

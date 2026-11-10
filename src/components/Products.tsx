@@ -202,7 +202,7 @@ export default function Products() {
               >
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} — custom corporate uniforms manufactured in Ajman, UAE`}
                   fill
                   sizes="(min-width: 1024px) 25vw, 50vw"
                   className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.07]"
@@ -306,7 +306,7 @@ export default function Products() {
               <div className="relative h-48 sm:h-64 md:h-auto md:min-h-[440px]">
                 <Image
                   src={selected.image}
-                  alt={selected.name}
+                  alt={`${selected.name} — premium uniform manufacturing in Ajman workshop`}
                   fill
                   sizes="(min-width: 768px) 45vw, 100vw"
                   className="object-cover"

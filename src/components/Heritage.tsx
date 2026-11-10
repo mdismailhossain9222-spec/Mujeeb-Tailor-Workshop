@@ -75,7 +75,7 @@ export default function Heritage() {
               <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(194,65,12,0.45)] pb-4 sm:pb-0">
                 <Image
                   src={FABRIC_IMAGE}
-                  alt="Rolls of imported fabric in the Mujeeb Tailoring Workshop store"
+                  alt="High-quality imported textile rolls stocked for corporate uniform manufacturing at Mujeeb Tailoring Workshop"
                   width={1000}
                   height={760}
                   sizes="(min-width: 1024px) 40vw, 90vw"

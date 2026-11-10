@@ -56,7 +56,7 @@ export default function Hero() {
         <motion.div style={{ y }} className="absolute inset-0 h-[120%]">
           <Image
             src={HERO_IMAGE}
-            alt=""
+            alt="Premium uniform manufacturing workshop in Ajman, UAE — custom corporate garments and workwear"
             fill
             priority
             sizes="100vw"
