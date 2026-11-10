@@ -22,7 +22,7 @@ const PRODUCTS: Product[] = [
     id: "shirts",
     name: "Formal Shirts",
     category: "Corporate",
-    image: "/images/products/shirts.jpg",
+    image: "/images/products/shirts.webp",
     blurb:
       "Crisp, breathable corporate shirts with reinforced stitching — the everyday standard for boardrooms, ministries and retail floors.",
     options: [
@@ -61,7 +61,7 @@ const PRODUCTS: Product[] = [
     id: "hoodies",
     name: "Hoodies & Sweatshirts",
     category: "Corporate",
-    image: "/images/products/hoodies.jpg",
+    image: "/images/products/hoodies.webp",
     blurb:
       "Heavyweight fleece for teams, events and casual staff wear — soft inside, structured outside.",
     options: [
@@ -74,7 +74,7 @@ const PRODUCTS: Product[] = [
     id: "trousers",
     name: "Formal Trousers",
     category: "Corporate",
-    image: "/images/products/trousers.jpg",
+    image: "/images/products/trousers.webp",
     blurb:
       "Centre-creased tailoring in charcoal and navy — pressed to perfection for hospitality and corporate sets.",
     options: [
@@ -87,7 +87,7 @@ const PRODUCTS: Product[] = [
     id: "pants",
     name: "Work Pants & Chinos",
     category: "Workwear",
-    image: "/images/products/pants.jpg",
+    image: "/images/products/pants.webp",
     blurb:
       "Reinforced khaki work pants with practical utility pocketing for technical and field teams.",
     options: [
@@ -100,7 +100,7 @@ const PRODUCTS: Product[] = [
     id: "coveralls",
     name: "Industrial Coveralls",
     category: "Workwear",
-    image: "/images/products/coveralls.jpg",
+    image: "/images/products/coveralls.webp",
     blurb:
       "Navy coveralls with high-visibility orange piping — built for automotive, energy and logistics sites.",
     options: [
@@ -113,7 +113,7 @@ const PRODUCTS: Product[] = [
     id: "industrial-uniforms",
     name: "Industrial Uniforms",
     category: "Workwear",
-    image: "/images/products/industrial-uniforms.jpg",
+    image: "/images/products/industrial-uniforms.webp",
     blurb:
       "Heavy-duty factory and workshop uniforms — reinforced seams, stain-resistant fabrics and hi-vis detailing built for active industrial sites.",
     options: [
