@@ -1,4 +1,4 @@
-import { MapPin, Mail, Scissors } from "lucide-react";
+import { MapPin, Mail, Phone, Scissors } from "lucide-react";
 import Image from "next/image";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -112,13 +112,31 @@ export default function Footer() {
                   mujeebtw@gmail.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="tel:+971505958790"
+                  className="flex items-start gap-2.5 transition-colors hover:text-brand"
+                >
+                  <Phone className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2.2} />
+                  +971 50 595 8790
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+971507964529"
+                  className="flex items-start gap-2.5 transition-colors hover:text-brand"
+                >
+                  <Phone className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2.2} />
+                  +971 50 796 4529
+                </a>
+              </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2.2} />
                 Ajman, United Arab Emirates
               </li>
               <li>
                 <a
-                  href="https://wa.me/971501234567"
+                  href="https://wa.me/971501583923"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 transition-colors hover:text-brand"

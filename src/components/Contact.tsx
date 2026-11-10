@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Clock, Mail, MapPin, ArrowUpRight, Phone } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-const WHATSAPP_NUMBER = "971501234567";
-const WHATSAPP_DISPLAY = "+971 50 123 4567";
+const WHATSAPP_NUMBER = "971501583923";
+const WHATSAPP_DISPLAY = "+971 50 595 8790";
 const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Hello Mujeeb Tailoring Workshop! I'd like to discuss a uniform order for our team."
 )}`;
@@ -56,6 +56,38 @@ export default function Contact() {
                 />
               </span>
             </a>
+
+            {/* Phones */}
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <a
+                href="tel:+971505958790"
+                className="group rounded-2xl border border-orange-100 bg-white p-5 shadow-sm transition-all hover:border-[#EA580C]/40 hover:shadow-[0_10px_30px_rgba(234,88,12,0.1)]"
+              >
+                <span className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.24em] text-muted">
+                  <span className="grid size-8 place-items-center rounded-lg bg-cream text-brand">
+                    <Phone className="size-4" strokeWidth={2.4} />
+                  </span>
+                  UAE Office 1
+                </span>
+                <span className="mt-3 block font-serif text-xl font-black leading-none text-brand-dark transition-colors group-hover:text-brand">
+                  +971 50 595 8790
+                </span>
+              </a>
+              <a
+                href="tel:+971507964529"
+                className="group rounded-2xl border border-orange-100 bg-white p-5 shadow-sm transition-all hover:border-[#EA580C]/40 hover:shadow-[0_10px_30px_rgba(234,88,12,0.1)]"
+              >
+                <span className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.24em] text-muted">
+                  <span className="grid size-8 place-items-center rounded-lg bg-cream text-brand">
+                    <Phone className="size-4" strokeWidth={2.4} />
+                  </span>
+                  UAE Office 2
+                </span>
+                <span className="mt-3 block font-serif text-xl font-black leading-none text-brand-dark transition-colors group-hover:text-brand">
+                  +971 50 796 4529
+                </span>
+              </a>
+            </div>
 
             {/* Location + Hours */}
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

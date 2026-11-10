@@ -1,4 +1,5 @@
 import Clients from "@/components/Clients";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import FloatingActions from "@/components/FloatingActions";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Services />
       <Products />
       <Clients />
+      <Testimonials />
       <Contact />
       <Footer />
       <FloatingActions />
