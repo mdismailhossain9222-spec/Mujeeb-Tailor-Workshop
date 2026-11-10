@@ -33,7 +33,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "polos",
-    name: "Polo T-Shirts",
+    name: "Polo Shirts",
     category: "Corporate",
     image: "/images/products/polos.jpg",
     blurb:
@@ -42,6 +42,19 @@ const PRODUCTS: Product[] = [
       "200–240 GSM piqué with logo embroidery",
       "Single or multi-colour chest emblems",
       "Coordinating team sets & size runs",
+    ],
+  },
+  {
+    id: "tshirts",
+    name: "Round Neck T-Shirts",
+    category: "Corporate",
+    image: "/images/products/tshirts.jpg",
+    blurb:
+      "Soft, breathable round neck tees in classic corporate colours — the casual-layer staple for teams, events and retail floors.",
+    options: [
+      "180–220 GSM jersey cotton or poly-blend",
+      "Embroidered or DTF logo placement",
+      "Bulk sizing S–5XL & custom measurements",
     ],
   },
   {
@@ -94,6 +107,19 @@ const PRODUCTS: Product[] = [
       "Reflective piping & hi-vis variants",
       "Fire-retardant fabric on request",
       "Chest and sleeve logo embroidery",
+    ],
+  },
+  {
+    id: "industrial-uniforms",
+    name: "Industrial Uniforms",
+    category: "Workwear",
+    image: "/images/products/industrial-uniforms.jpg",
+    blurb:
+      "Heavy-duty factory and workshop uniforms — reinforced seams, stain-resistant fabrics and hi-vis detailing built for active industrial sites.",
+    options: [
+      "Flame-retardant & hi-vis fabric options",
+      "Reinforced knees, elbows and bar-tacking",
+      "Chest, sleeve and back logo embroidery",
     ],
   },
   {
@@ -182,7 +208,7 @@ export default function Products() {
         {/* Grid */}
         <motion.div
           layout
-          className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4"
+          className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 xl:grid-cols-5"
         >
           <AnimatePresence mode="popLayout">
             {visible.map((product) => (
@@ -204,7 +230,7 @@ export default function Products() {
                   src={product.image}
                   alt={`${product.name} — custom corporate uniforms manufactured in Ajman, UAE`}
                   fill
-                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 25vw, 50vw"
                   className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.07]"
                 />
                 <div
