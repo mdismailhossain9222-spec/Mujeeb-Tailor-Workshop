@@ -130,9 +130,17 @@ export default function Footer() {
                   +971 50 796 4529
                 </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2.2} />
-                Ajman, United Arab Emirates
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/DdiTjrSxiLuowSxp8?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2.5 transition-colors hover:text-brand"
+                  aria-label="Get directions to Mujeeb Tailoring Workshop, Ajman, UAE"
+                >
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2.2} />
+                  Ajman, United Arab Emirates
+                </a>
               </li>
               <li>
                 <a

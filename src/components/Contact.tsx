@@ -98,22 +98,25 @@ export default function Contact() {
                   </span>
                   Visit
                 </span>
-                <p className="mt-3 text-[15px] font-extrabold leading-snug text-ink">
-                  Ajman, UAE
-                </p>
-                <p className="mt-1 text-[11.5px] leading-snug text-muted">
-                  Mujeeb Tailoring Workshop —
-                  <br />
-                  garment manufacturing &amp; fitting studio
-                </p>
                 <a
-                  href="https://www.google.com/maps/search/Ajman%20United%20Arab%20Emirates"
+                  href="https://maps.app.goo.gl/DdiTjrSxiLuowSxp8?g_st=ic"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-brand transition-colors hover:text-brand-dark"
+                  className="mt-3 block"
+                  aria-label="Get directions to Mujeeb Tailoring Workshop, Ajman, UAE"
                 >
-                  Open in Maps
-                  <ArrowUpRight className="size-3.5" strokeWidth={2.6} />
+                  <p className="text-[15px] font-extrabold leading-snug text-ink transition-colors hover:text-brand">
+                    Ajman, UAE
+                  </p>
+                  <p className="mt-1 text-[11.5px] leading-snug text-muted">
+                    Mujeeb Tailoring Workshop —
+                    <br />
+                    garment manufacturing &amp; fitting studio
+                  </p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-brand transition-colors hover:text-brand-dark">
+                    Get Directions
+                    <ArrowUpRight className="size-3.5" strokeWidth={2.6} />
+                  </span>
                 </a>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
@@ -163,7 +166,7 @@ export default function Contact() {
           <div className="relative min-h-[380px] overflow-hidden rounded-3xl border border-orange-100 shadow-[0_35px_70px_-30px_rgba(194,65,12,0.45)] sm:min-h-[460px]">
             <iframe
               title="Mujeeb Tailoring Workshop — Ajman, UAE on Google Maps"
-              src="https://www.google.com/maps?q=Ajman%20United%20Arab%20Emirates&z=13&output=embed"
+              src="https://maps.google.com/maps?q=25.3803501,55.4756889&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="absolute inset-0 h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -175,10 +178,16 @@ export default function Contact() {
               <p className="mt-1 font-serif text-base font-black leading-tight text-ink">
                 Mujeeb Tailoring Workshop
               </p>
-              <p className="mt-1 flex items-center gap-1.5 text-[11px] font-semibold text-muted">
-                <MapPin className="size-3.5 text-brand" strokeWidth={2.4} />
-                Ajman, United Arab Emirates
-              </p>
+              <a
+                  href="https://maps.app.goo.gl/DdiTjrSxiLuowSxp8?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 flex items-center gap-1.5 text-[11px] font-semibold text-muted transition-colors hover:text-brand"
+                  aria-label="Get directions to Mujeeb Tailoring Workshop, Ajman, UAE"
+                >
+                  <MapPin className="size-3.5 text-brand" strokeWidth={2.4} />
+                  Ajman, United Arab Emirates
+                </a>
             </div>
             <div className="absolute bottom-4 right-4 rounded-full border border-orange-100 bg-white/90 px-4 py-2 text-[9px] font-extrabold uppercase tracking-[0.22em] text-brand-dark shadow backdrop-blur sm:bottom-6 sm:right-6">
               Est. 2003 · Ajman
