@@ -41,3 +41,6 @@ test-results/
 
 # Project archives
 *.zip
+/dist/
+.vinext/
+.cloudflare/
