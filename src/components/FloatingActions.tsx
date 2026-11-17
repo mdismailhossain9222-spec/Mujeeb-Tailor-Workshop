@@ -43,7 +43,7 @@ export default function FloatingActions() {
         whileHover={{ scale: 1.12 }}
         whileTap={{ scale: 0.9 }}
         aria-label="Chat on WhatsApp"
-        className="grid size-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_18px_40px_-10px_rgba(37,211,102,0.7)]"
+        className="grid size-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_0_20px_rgba(37,211,102,0.45)] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(37,211,102,0.65)]"
       >
         <WhatsAppIcon className="size-7" />
       </motion.a>

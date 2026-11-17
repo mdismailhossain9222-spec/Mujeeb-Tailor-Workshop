@@ -84,7 +84,7 @@ export default function Navbar() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="hidden h-11 items-center gap-2 rounded-full bg-brand px-6 text-sm font-bold text-white shadow-[0_14px_30px_-10px_rgba(234,88,12,0.6)] transition-colors hover:bg-brand-dark sm:inline-flex"
+              className="hidden h-11 items-center gap-2 rounded-full bg-brand px-6 text-sm font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.45)] transition-all duration-300 ease-in-out hover:bg-brand-dark hover:shadow-[0_0_25px_rgba(234,88,12,0.65)] sm:inline-flex"
             >
               Contact Us
               <ArrowRight className="size-4" strokeWidth={2.5} />
@@ -132,7 +132,7 @@ export default function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="mt-4 flex h-12 items-center justify-center gap-2 rounded-full bg-brand text-sm font-bold text-white"
+                  className="mt-4 flex h-12 items-center justify-center gap-2 rounded-full bg-brand text-sm font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.45)] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(234,88,12,0.65)]"
                 >
                   Contact Us
                   <ArrowRight className="size-4" />

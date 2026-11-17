@@ -142,6 +142,17 @@ export default function Footer() {
                   Ajman, United Arab Emirates
                 </a>
               </li>
+              <li className="flex items-start gap-2.5">
+                <span className="mt-0.5 grid size-4 shrink-0 place-items-center rounded-full bg-[#FFF7ED]">
+                  <span className="size-1.5 rounded-full bg-brand" />
+                </span>
+                <span className="text-[13px] font-medium leading-snug">
+                  <span className="block font-semibold text-ink">Bangladesh Operations</span>
+                  <span className="block text-muted">
+                    Distribution: Dhaka · Store &amp; Logistics: Narayanganj
+                  </span>
+                </span>
+              </li>
               <li>
                 <a
                   href="https://wa.me/971501583923"

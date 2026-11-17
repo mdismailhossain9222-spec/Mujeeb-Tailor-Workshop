@@ -72,7 +72,7 @@ export default function Heritage() {
                 aria-hidden="true"
                 className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border-2 border-brand"
               />
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(194,65,12,0.45)] pb-4 sm:pb-0">
+              <div className="relative overflow-hidden rounded-2xl shadow-[0_0_25px_rgba(194,65,12,0.4)] pb-4 sm:pb-0">
                 <Image
                   src={FABRIC_IMAGE}
                   alt="High-quality imported textile rolls stocked for corporate uniform manufacturing at Mujeeb Tailoring Workshop"

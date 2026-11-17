@@ -168,7 +168,7 @@ export default function Hero() {
               href="#products"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-brand px-8 text-base font-bold text-white shadow-[0_20px_40px_-12px_rgba(234,88,12,0.6)] transition-colors hover:bg-brand-dark"
+              className="group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-brand px-8 text-base font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.45)] transition-all duration-300 ease-in-out hover:bg-brand-dark hover:shadow-[0_0_25px_rgba(234,88,12,0.65)]"
             >
               View Portfolio
               <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />

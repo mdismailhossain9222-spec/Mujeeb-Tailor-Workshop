@@ -194,7 +194,7 @@ export default function Products() {
                   aria-pressed={active}
                   className={`h-11 rounded-full border px-5 text-[12px] font-bold uppercase tracking-[0.14em] transition-all duration-300 ${
                     active
-                      ? "border-brand bg-brand text-white shadow-[0_12px_28px_-10px_rgba(234,88,12,0.6)]"
+                      ? "border-brand bg-brand text-white shadow-[0_0_20px_rgba(234,88,12,0.45)] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(234,88,12,0.65)]"
                       : "border-orange-200 bg-white text-muted hover:border-brand hover:text-brand"
                   }`}
                 >
@@ -269,7 +269,7 @@ export default function Products() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.35 }}
-                className="group relative flex aspect-[3/4] flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-brand via-brand to-brand-dark p-5 text-left shadow-[0_25px_50px_-20px_rgba(234,88,12,0.7)] sm:p-6"
+                className="group relative flex aspect-[3/4] flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-brand via-brand to-brand-dark p-5 text-left shadow-[0_0_25px_rgba(234,88,12,0.5)] transition-all duration-300 ease-in-out hover:shadow-[0_0_30px_rgba(234,88,12,0.7)] sm:p-6"
               >
                 <div aria-hidden="true" className="texture-dots-light absolute inset-0 opacity-50" />
                 <div aria-hidden="true" className="absolute -right-12 -top-12 size-44 rounded-full bg-white/10" />
@@ -371,7 +371,7 @@ export default function Products() {
                     )}&body=${encodeURIComponent(
                       `Hello Mujeeb Tailoring Workshop,\n\nI would like to enquire about ${selected.name} for our team.\n\nQuantity: \nSizes: \nLogo / branding: \n\nThank you.`
                     )}`}
-                    className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-brand text-sm font-bold text-white transition-colors hover:bg-brand-dark"
+                    className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-brand text-sm font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.45)] transition-all duration-300 ease-in-out hover:bg-brand-dark hover:shadow-[0_0_25px_rgba(234,88,12,0.65)]"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

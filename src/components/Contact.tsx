@@ -109,15 +109,28 @@ export default function Contact() {
                     Ajman, UAE
                   </p>
                   <p className="mt-1 text-[11.5px] leading-snug text-muted">
-                    Mujeeb Tailoring Workshop —
-                    <br />
-                    garment manufacturing &amp; fitting studio
+                    UAE Workshop — garment manufacturing &amp; fitting studio
                   </p>
                   <span className="mt-3 inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-brand transition-colors hover:text-brand-dark">
                     Get Directions
                     <ArrowUpRight className="size-3.5" strokeWidth={2.6} />
                   </span>
                 </a>
+                <div className="mt-3 rounded-xl border border-dashed border-orange-200 bg-[#FFF7ED] p-3.5">
+                  <p className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-brand">
+                    Bangladesh Operations
+                  </p>
+                  <div className="mt-1.5 space-y-1">
+                    <p className="text-[12px] font-semibold leading-snug text-ink">
+                      Distribution:{" "}
+                      <span className="font-normal text-muted">Dhaka</span>
+                    </p>
+                    <p className="text-[12px] font-semibold leading-snug text-ink">
+                      Store &amp; Logistics:{" "}
+                      <span className="font-normal text-muted">Narayanganj</span>
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
                 <span className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.24em] text-muted">
@@ -144,7 +157,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
-              className="mt-8 inline-flex h-16 w-full max-w-md items-center justify-center gap-4 rounded-2xl bg-[#25D366] px-6 text-white shadow-[0_22px_45px_-15px_rgba(37,211,102,0.65)] transition-shadow hover:shadow-[0_26px_55px_-15px_rgba(37,211,102,0.75)] sm:w-auto"
+              className="mt-8 inline-flex h-16 w-full max-w-md items-center justify-center gap-4 rounded-2xl bg-[#25D366] px-6 text-white shadow-[0_0_20px_rgba(37,211,102,0.45)] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(37,211,102,0.65)] sm:w-auto"
               aria-label="Chat on WhatsApp"
             >
               <WhatsAppIcon className="size-8 shrink-0" />
@@ -188,6 +201,10 @@ export default function Contact() {
                   <MapPin className="size-3.5 text-brand" strokeWidth={2.4} />
                   Ajman, United Arab Emirates
                 </a>
+                <span className="mt-2 inline-flex items-center gap-1.5 text-[10px] font-semibold text-muted">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#25D366]" />
+                  Bangladesh: Dhaka · Narayanganj
+                </span>
             </div>
             <div className="absolute bottom-4 right-4 rounded-full border border-orange-100 bg-white/90 px-4 py-2 text-[9px] font-extrabold uppercase tracking-[0.22em] text-brand-dark shadow backdrop-blur sm:bottom-6 sm:right-6">
               Est. 2003 · Ajman
