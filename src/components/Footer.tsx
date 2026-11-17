@@ -180,6 +180,19 @@ export default function Footer() {
             Crafted in Ajman, UAE — Crafting Excellence in Every Stitch
           </p>
         </div>
+        {/* Agency credit */}
+        <div className="border-t border-orange-100">
+          <div className="mx-auto flex max-w-7xl items-center justify-center px-5 py-3 sm:px-8">
+            <a
+              href="https://www.instagram.com/matriotic.studios.llc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] font-medium text-muted transition-colors hover:text-[#EA580C]"
+            >
+              Made by Matriotic Studios LLC
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
