@@ -22,7 +22,7 @@ const HERO_IMAGE =
   "https://images.pexels.com/photos/19340518/pexels-photo-19340518.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1600&w=2400";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL("https://mujeebtw.com"),
   title: "Mujeeb Tailoring Workshop | Premium Uniform Manufacturer in Ajman, UAE",
   description:
     "Over 40 years of garment manufacturing heritage. Custom uniforms, corporate wear, lab coats, coveralls, and embroidery/printing in Ajman, UAE. Bulk & bespoke orders.",
