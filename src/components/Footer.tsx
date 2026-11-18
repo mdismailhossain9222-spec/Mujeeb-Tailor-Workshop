@@ -147,9 +147,9 @@ export default function Footer() {
                   <span className="size-1.5 rounded-full bg-brand" />
                 </span>
                 <span className="text-[13px] font-medium leading-snug">
-                  <span className="block font-semibold text-ink">Bangladesh Operations</span>
+                  <span className="block font-semibold text-ink">UAE Operations</span>
                   <span className="block text-muted">
-                    Distribution: Dhaka · Store &amp; Logistics: Narayanganj
+                    Distribution: Dubai · Store &amp; Logistics: Ajman
                   </span>
                 </span>
               </li>

@@ -201,10 +201,6 @@ export default function Contact() {
                   <MapPin className="size-3.5 text-brand" strokeWidth={2.4} />
                   Ajman, United Arab Emirates
                 </a>
-                <span className="mt-2 inline-flex items-center gap-1.5 text-[10px] font-semibold text-muted">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#25D366]" />
-                  Bangladesh: Dhaka · Narayanganj
-                </span>
             </div>
             <div className="absolute bottom-4 right-4 rounded-full border border-orange-100 bg-white/90 px-4 py-2 text-[9px] font-extrabold uppercase tracking-[0.22em] text-brand-dark shadow backdrop-blur sm:bottom-6 sm:right-6">
               Est. 2003 · Ajman

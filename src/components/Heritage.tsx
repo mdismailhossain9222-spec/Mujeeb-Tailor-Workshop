@@ -85,9 +85,6 @@ export default function Heritage() {
                   Imported Fabric Stock
                 </span>
               </div>
-              <figcaption className="mt-5 text-[11px] font-medium italic text-muted">
-                Our imported fabric store — Mujeeb Tailoring Workshop, Ajman.
-              </figcaption>
             </figure>
 
             <blockquote className="relative mt-9 rounded-2xl border border-orange-100 bg-cream p-6 pt-8 shadow-sm">

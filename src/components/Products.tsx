@@ -278,7 +278,7 @@ export default function Products() {
                   Bespoke &amp; Bulk
                 </span>
                 <span className="relative mt-auto">
-                  <span className="block font-serif text-xl font-black leading-[1.15] text-white sm:text-[27px]">
+                  <span className="block break-words font-serif text-lg font-black leading-[1.2] text-white sm:text-[23px]">
                     Need something made&#8209;to&#8209;measure?
                   </span>
                   <span className="mt-2 block text-[10.5px] leading-snug text-orange-100 sm:text-[12.5px]">
